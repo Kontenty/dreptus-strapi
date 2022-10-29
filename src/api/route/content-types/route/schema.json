@@ -1,0 +1,65 @@
+{
+  "kind": "collectionType",
+  "collectionName": "routes",
+  "info": {
+    "singularName": "route",
+    "pluralName": "routes",
+    "displayName": "Trasy",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "image": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "image_gallery": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "map": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": ["images", "files", "videos", "audios"]
+    },
+    "length": {
+      "type": "decimal"
+    },
+    "pk": {
+      "type": "string"
+    },
+    "route_number": {
+      "type": "string"
+    },
+    "route_type": {
+      "type": "enumeration",
+      "enum": ["piesza", "rowerowa", "motorowa"],
+      "default": "piesza"
+    },
+    "author": {
+      "type": "string",
+      "default": "Dariusz Mazurek"
+    },
+    "funding": {
+      "type": "string",
+      "default": "Trasa sfinansowana przez jej autora"
+    },
+    "adnotation": {
+      "type": "string"
+    }
+  }
+}
