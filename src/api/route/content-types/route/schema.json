@@ -22,19 +22,34 @@
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos", "audios"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "image_gallery": {
       "type": "media",
       "multiple": true,
       "required": false,
-      "allowedTypes": ["images", "files", "videos", "audios"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "map": {
       "type": "media",
       "multiple": false,
       "required": false,
-      "allowedTypes": ["images", "files", "videos", "audios"]
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
     },
     "length": {
       "type": "decimal"
@@ -47,7 +62,11 @@
     },
     "route_type": {
       "type": "enumeration",
-      "enum": ["piesza", "rowerowa", "motorowa"],
+      "enum": [
+        "piesza",
+        "rowerowa",
+        "motorowa"
+      ],
       "default": "piesza"
     },
     "author": {
@@ -60,6 +79,11 @@
     },
     "adnotation": {
       "type": "string"
+    },
+    "lokalizacje": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::location.location"
     }
   }
 }
